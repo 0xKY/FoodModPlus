@@ -1,13 +1,21 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#S#",
+    "SHS",
+    "#S#"
+  ],
+  "key": {
+    "#": {
       "item": "minecraft:spruce_leaves"
     },
-    {
-      "item": "minecraft:glass_bottle"
+    "S": {
+      "item": "minecraft:sugar_cane"
+    },
+    "H": {
+      "item": "minecraft:honey_bottle"
     }
-  ],
+  },
   "result": {
     "item": "foodmodplus:syrup",
     "count": 1

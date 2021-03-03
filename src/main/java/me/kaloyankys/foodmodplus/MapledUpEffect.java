@@ -31,7 +31,6 @@ public class MapledUpEffect extends StatusEffect {
             ((PlayerEntity) entity).applyStatusEffect(new StatusEffectInstance(StatusEffects.HUNGER, 20*20, 120, true, false));
             ((PlayerEntity) entity).applyStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 40, 6, true, false));
             ((PlayerEntity) entity).applyStatusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS, 20*20, 120, true, false));
-
         }
     }
 
