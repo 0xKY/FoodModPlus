@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "KCK",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:wheat"
+    },
+    "K": {
+      "item": "minecraft:kelp"
+    },
+    "C": {
+      "item": "minecraft:cooked_beef"
+    }
+  },
+  "result": {
+    "item": "foodmodplus:burger",
+    "count": 1
+  }
+}

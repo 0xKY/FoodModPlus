@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "foodmodplus",
+  "version": "${version}",
+  "name": "Food Mod Plus",
+  "description": "A non-cluttered, useful, food mod.",
+  "authors": [
+    "KaloyanKYS"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/foodmodplus/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "me.kaloyankys.foodmodplus.client.FoodmodplusClient"
+    ],
+    "main": [
+      "me.kaloyankys.foodmodplus.Foodmodplus"
+    ]
+  },
+  "mixins": [
+    "foodmodplus.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.11.2",
+    "fabric": "*",
+    "minecraft": "1.16.5"
+  }
+}

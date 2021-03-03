@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "foodmodplus:syrup"
+    },
+    {
+      "item": "foodmodplus:pancake"
+    },
+    {
+      "item": "foodmodplus:pancake"
+    },
+    {
+      "item": "foodmodplus:pancake"
+    },
+    {
+      "item": "foodmodplus:pancake"
+    },
+    {
+      "item": "foodmodplus:pancake"
+    },
+    {
+      "item": "foodmodplus:pancake"
+    }
+  ],
+  "result": {
+    "item": "foodmodplus:pancake_stack",
+    "count": 1
+  }
+}

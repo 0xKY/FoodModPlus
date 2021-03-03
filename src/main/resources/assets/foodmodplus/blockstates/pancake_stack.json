@@ -1,0 +1,25 @@
+{
+  "variants": {
+    "bites=0": {
+      "model": "foodmodplus:block/pancake_stack"
+    },
+    "bites=1": {
+      "model": "foodmodplus:block/pancake_stack_slice1"
+    },
+    "bites=2": {
+      "model": "foodmodplus:block/pancake_stack_slice2"
+    },
+    "bites=3": {
+      "model": "foodmodplus:block/pancake_stack_slice5"
+    },
+    "bites=4": {
+      "model": "foodmodplus:block/pancake_stack_slice7"
+    },
+    "bites=5": {
+      "model": "foodmodplus:block/pancake_stack_slice8"
+    },
+    "bites=6": {
+      "model": "foodmodplus:block/pancake_stack_slice10"
+    }
+  }
+}
