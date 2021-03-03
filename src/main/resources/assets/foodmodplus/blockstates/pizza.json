@@ -1,0 +1,25 @@
+{
+  "variants": {
+    "bites=0": {
+      "model": "foodmodplus:block/pizza"
+    },
+    "bites=1": {
+      "model": "foodmodplus:block/pizza1"
+    },
+    "bites=2": {
+      "model": "foodmodplus:block/pizza2"
+    },
+    "bites=3": {
+      "model": "foodmodplus:block/pizza5"
+    },
+    "bites=4": {
+      "model": "foodmodplus:block/pizza6"
+    },
+    "bites=5": {
+      "model": "foodmodplus:block/pizza7"
+    },
+    "bites=6": {
+      "model": "foodmodplus:block/pizza8"
+    }
+  }
+}

@@ -21,7 +21,7 @@ public class Foodmodplus implements ModInitializer {
     public static final Block PANCAKE_STACK = new PancakeStackBlock(FabricBlockSettings.of(Material.CAKE).strength(0.2f));
     public static final StatusEffect MAPLED_UP = new MapledUpEffect();
     public static final Item SYRUP = new Syrup(new Item.Settings().group(ItemGroup.FOOD));
-    public static final Item PIZZA_ITEM = new PizzaItem(new Item.Settings().group(ItemGroup.FOOD));
+    public static final Item PIZZA_ITEM = new PizzaItem(new Item.Settings().group(ItemGroup.FOOD).food(ModFoodComponents.PIZZA_ITEM));
     public static final Block PIZZA = new Pizza(FabricBlockSettings.of(Material.CAKE).strength(0.2f));
 
     @Override
@@ -35,6 +35,7 @@ public class Foodmodplus implements ModInitializer {
         Registry.register(Registry.ITEM, new Identifier("foodmodplus", "syrup"), SYRUP);
         Registry.register(Registry.ITEM, new Identifier("foodmodplus","pizza_item"), PIZZA_ITEM);
         Registry.register(Registry.BLOCK, new Identifier("foodmodplus","pizza"), PIZZA);
+        Registry.register(Registry.ITEM, new Identifier("foodmodplus", "pizza"), new BlockItem(PIZZA, new FabricItemSettings().group(ItemGroup.FOOD)));
     }
 
 }

@@ -3,5 +3,7 @@
   "block.foodmodplus.pancake_stack": "Pancake Stack",
   "item.foodmodplus.pancake": "Pancake",
   "item.foodmodplus.burger": "Burger",
-  "item.foodmodplus.syrup": "Syrup"
+  "item.foodmodplus.syrup": "Syrup",
+  "block.foodmodplus.pizza": "Pizza",
+  "item.foodmodplus.pizza_item": "Pizza Slice"
 }
