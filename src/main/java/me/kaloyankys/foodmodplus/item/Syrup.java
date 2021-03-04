@@ -1,5 +1,6 @@
-package me.kaloyankys.foodmodplus;
+package me.kaloyankys.foodmodplus.item;
 
+import me.kaloyankys.foodmodplus.Foodmodplus;
 import net.minecraft.advancement.criterion.Criteria;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;

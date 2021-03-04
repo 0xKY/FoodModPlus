@@ -1,4 +1,4 @@
-package me.kaloyankys.foodmodplus;
+package me.kaloyankys.foodmodplus.item;
 
 import net.minecraft.item.Item;
 
