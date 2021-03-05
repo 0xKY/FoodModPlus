@@ -1,4 +1,4 @@
-package me.kaloyankys.foodmodplus;
+package me.kaloyankys.foodmodplus.block;
 
 import net.minecraft.block.*;
 import net.minecraft.util.math.BlockPos;

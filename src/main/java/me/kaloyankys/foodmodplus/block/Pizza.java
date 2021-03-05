@@ -1,5 +1,6 @@
-package me.kaloyankys.foodmodplus;
+package me.kaloyankys.foodmodplus.block;
 
+import me.kaloyankys.foodmodplus.Foodmodplus;
 import net.minecraft.block.*;
 import net.minecraft.entity.ItemEntity;
 import net.minecraft.entity.LivingEntity;

@@ -1,5 +1,8 @@
 package me.kaloyankys.foodmodplus;
 
+import me.kaloyankys.foodmodplus.block.IceCream;
+import me.kaloyankys.foodmodplus.block.PancakeStackBlock;
+import me.kaloyankys.foodmodplus.block.Pizza;
 import me.kaloyankys.foodmodplus.item.PizzaItem;
 import me.kaloyankys.foodmodplus.item.Syrup;
 import net.fabricmc.api.ModInitializer;
@@ -24,6 +27,7 @@ public class Foodmodplus implements ModInitializer {
     public static final Item PIZZA_ITEM = new PizzaItem(new Item.Settings().group(ItemGroup.FOOD).food(ModFoodComponents.PIZZA_ITEM));
     public static final Block PIZZA = new Pizza(FabricBlockSettings.of(Material.CAKE).strength(0.2f));
     public static final Item CHEESE = new Item(new Item.Settings().group(ItemGroup.FOOD).food(ModFoodComponents.CHEESE));
+    public static final Block ICECREAM = new IceCream(FabricBlockSettings.of(Material.SNOW_LAYER).strength(0.2f));
 
     @Override
     public void onInitialize() {
@@ -38,6 +42,8 @@ public class Foodmodplus implements ModInitializer {
         Registry.register(Registry.BLOCK, new Identifier("foodmodplus","pizza"), PIZZA);
         Registry.register(Registry.ITEM, new Identifier("foodmodplus", "pizza"), new BlockItem(PIZZA, new FabricItemSettings().group(ItemGroup.FOOD)));
         Registry.register(Registry.ITEM, new Identifier("foodmodplus","cheese"), CHEESE);
+        Registry.register(Registry.BLOCK, new Identifier("foodmodplus","icecream_block"), ICECREAM);
+        Registry.register(Registry.ITEM, new Identifier("foodmodplus", "icecream_block"), new BlockItem(ICECREAM, new FabricItemSettings().group(ItemGroup.FOOD).food(ModFoodComponents.ICECREAM)));
     }
 
 }
