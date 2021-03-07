@@ -16,6 +16,6 @@ public class VanillaFlower extends PlantBlock {
     }
 @Override
 public VoxelShape getOutlineShape(BlockState state, BlockView view, BlockPos pos, ShapeContext context) {
-    return VoxelShapes.cuboid(0f, 0f, 0f, 0.9f, 0.3f, 0.9f);
+    return VoxelShapes.cuboid(0f, 0f, 0f, 0.9f, 0.1f, 0.9f);
     }
 }
