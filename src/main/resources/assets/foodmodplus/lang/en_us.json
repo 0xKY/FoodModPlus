@@ -6,5 +6,7 @@
   "item.foodmodplus.syrup": "Syrup",
   "block.foodmodplus.pizza": "Pizza",
   "item.foodmodplus.pizza_item": "Pizza Slice",
-  "item.foodmodplus.cheese": "Cheese"
+  "item.foodmodplus.cheese": "Cheese",
+  "block.foodmodplus.icecream_block": "Icecream",
+  "block.foodmodplus.vanilla_flower": "Vanilla Flower"
 }

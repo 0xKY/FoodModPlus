@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "#G"
+  ],
+  "key": {
+    "#": {
+      "item": "foodmodplus:vanilla_flower"
+    },
+    "G": {
+      "item": "minecraft:glass_bottle"
+    }
+  },
+  "result": {
+    "item": "foodmodplus:glint_juice",
+    "count": 1
+  }
+}
