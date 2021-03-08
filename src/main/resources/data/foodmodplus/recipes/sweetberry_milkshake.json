@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "#G"
+  ],
+  "key": {
+    "#": {
+      "item": "foodmodplus:sweetberry_icecream"
+    },
+    "G": {
+      "item": "minecraft:glass_bottle"
+    }
+  },
+  "result": {
+    "item": "foodmodplus:sweetberry_milkshake",
+    "count": 1
+  }
+}

@@ -4,10 +4,8 @@ import me.kaloyankys.foodmodplus.block.IceCream;
 import me.kaloyankys.foodmodplus.block.PancakeStackBlock;
 import me.kaloyankys.foodmodplus.block.Pizza;
 import me.kaloyankys.foodmodplus.block.VanillaFlower;
-import me.kaloyankys.foodmodplus.item.ChocolateMilkshake;
-import me.kaloyankys.foodmodplus.item.GlintJuice;
-import me.kaloyankys.foodmodplus.item.PizzaItem;
-import me.kaloyankys.foodmodplus.item.Syrup;
+import me.kaloyankys.foodmodplus.item.*;
+import me.kaloyankys.foodmodplus.statuseffects.BerryPowerEffect;
 import me.kaloyankys.foodmodplus.statuseffects.MapledUpEffect;
 import me.kaloyankys.foodmodplus.world.feature.VanillaFeature;
 import net.fabricmc.api.ModInitializer;
@@ -50,6 +48,10 @@ public class Foodmodplus implements ModInitializer {
     public static final Block CHOCOLATE_ICECREAM = new IceCream(FabricBlockSettings.of(Material.SNOW_LAYER).strength(0.2f));
     public static final Block SWEETBERRY_ICECREAM = new IceCream(FabricBlockSettings.of(Material.SNOW_LAYER).strength(0.2f));
     public static final Item CHOCOLATE_MILKSHAKE = new ChocolateMilkshake(new Item.Settings().group(ItemGroup.FOOD));
+    public static final StatusEffect BERRY_POWER = new BerryPowerEffect();
+    public static final Item SWEETBERRY_MILKSHAKE = new SweetberryMilkshake(new Item.Settings().group(ItemGroup.FOOD));
+    public static final Item SWEETBERRY_JAM = new SweetberryJam(new Item.Settings().group(ItemGroup.FOOD));
+    public static final Item MILKSHAKE = new Milkshake(new Item.Settings().group(ItemGroup.FOOD));
 
     @Override
     public void onInitialize() {
@@ -69,16 +71,19 @@ public class Foodmodplus implements ModInitializer {
         Registry.register(Registry.BLOCK, new Identifier("foodmodplus","vanilla_flower"), VANILLA_FLOWER);
         Registry.register(Registry.ITEM, new Identifier("foodmodplus", "vanilla_flower"), new BlockItem(VANILLA_FLOWER, new FabricItemSettings().group(ItemGroup.MISC)));
         Registry.register(Registry.FEATURE, new Identifier("foodmodplus", "vanilla_feature"), VANILLA_FEATURE);
-        RegistryKey<ConfiguredFeature<?, ?>> stoneSpiral = RegistryKey.of(Registry.CONFIGURED_FEATURE_WORLDGEN,
+        RegistryKey<ConfiguredFeature<?, ?>> vanillaFeature = RegistryKey.of(Registry.CONFIGURED_FEATURE_WORLDGEN,
                 new Identifier("foodmodplus", "vanilla_feature"));
-        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, stoneSpiral.getValue(), VANILLA_FEATURE_CONFIGURED);
-        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.SAVANNA), GenerationStep.Feature.VEGETAL_DECORATION, stoneSpiral);
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, vanillaFeature.getValue(), VANILLA_FEATURE_CONFIGURED);
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.SAVANNA), GenerationStep.Feature.VEGETAL_DECORATION, vanillaFeature);
         Registry.register(Registry.ITEM, new Identifier("foodmodplus","glint_juice"), GLINT_JUICE);
         Registry.register(Registry.BLOCK, new Identifier("foodmodplus","chocolate_icecream"), CHOCOLATE_ICECREAM);
         Registry.register(Registry.ITEM, new Identifier("foodmodplus", "chocolate_icecream"), new BlockItem(CHOCOLATE_ICECREAM, new FabricItemSettings().group(ItemGroup.FOOD).food(ModFoodComponents.ICECREAM)));
         Registry.register(Registry.BLOCK, new Identifier("foodmodplus","sweetberry_icecream"), SWEETBERRY_ICECREAM);
         Registry.register(Registry.ITEM, new Identifier("foodmodplus", "sweetberry_icecream"), new BlockItem(SWEETBERRY_ICECREAM, new FabricItemSettings().group(ItemGroup.FOOD).food(ModFoodComponents.ICECREAM)));
         Registry.register(Registry.ITEM, new Identifier("foodmodplus","chocolate_milkshake"), CHOCOLATE_MILKSHAKE);
+        Registry.register(Registry.STATUS_EFFECT, new Identifier("foodmodplus", "berry_power"), BERRY_POWER);
+        Registry.register(Registry.ITEM, new Identifier("foodmodplus","sweetberry_milkshake"), SWEETBERRY_MILKSHAKE);
+        Registry.register(Registry.ITEM, new Identifier("foodmodplus","sweetberry_jam"), SWEETBERRY_JAM);
+        Registry.register(Registry.ITEM, new Identifier("foodmodplus","milkshake"), MILKSHAKE);
     }
-
 }

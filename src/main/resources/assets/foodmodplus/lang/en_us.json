@@ -11,5 +11,9 @@
   "block.foodmodplus.vanilla_flower": "Vanilla Flower",
   "item.foodmodplus.glint_juice": "Glint Juice",
   "block.foodmodplus.chocolate_icecream": "Chocolate Icecream",
-  "block.foodmodplus.sweetberry_icecream": "Sweet Berry Icecream"
+  "block.foodmodplus.sweetberry_icecream": "Sweet Berry Icecream",
+  "item.foodmodplus.sweetberry_milkshake": "Sweet Berry Milkshake",
+  "item.foodmodplus.milkshake": "Milkshake",
+  "item.foodmodplus.chocolate_milkshake": "Chocolate Milkshake",
+  "item.foodmodplus.sweetberry_jam": "Sweet Berry Jam"
 }
