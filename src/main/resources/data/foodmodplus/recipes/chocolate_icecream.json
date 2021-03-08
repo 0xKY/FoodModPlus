@@ -2,15 +2,15 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     " # ",
-    "#B#",
+    "#P#",
     " # "
   ],
   "key": {
     "#": {
       "item": "minecraft:cocoa_beans"
     },
-    "B": {
-      "item": "foodmodplus:icecream"
+    "P": {
+      "item": "foodmodplus:icecream_block"
     }
   },
   "result": {
