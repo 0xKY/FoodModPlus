@@ -4,6 +4,7 @@ import me.kaloyankys.foodmodplus.block.IceCream;
 import me.kaloyankys.foodmodplus.block.PancakeStackBlock;
 import me.kaloyankys.foodmodplus.block.Pizza;
 import me.kaloyankys.foodmodplus.block.VanillaFlower;
+import me.kaloyankys.foodmodplus.item.ChocolateMilkshake;
 import me.kaloyankys.foodmodplus.item.GlintJuice;
 import me.kaloyankys.foodmodplus.item.PizzaItem;
 import me.kaloyankys.foodmodplus.item.Syrup;
@@ -46,6 +47,9 @@ public class Foodmodplus implements ModInitializer {
     public static final ConfiguredFeature<?, ?> VANILLA_FEATURE_CONFIGURED = VANILLA_FEATURE.configure(FeatureConfig.DEFAULT)
             .decorate(Decorator.CHANCE.configure(new ChanceDecoratorConfig(5)));
     public static final Item GLINT_JUICE = new GlintJuice(new Item.Settings().group(ItemGroup.FOOD));
+    public static final Block CHOCOLATE_ICECREAM = new IceCream(FabricBlockSettings.of(Material.SNOW_LAYER).strength(0.2f));
+    public static final Block SWEETBERRY_ICECREAM = new IceCream(FabricBlockSettings.of(Material.SNOW_LAYER).strength(0.2f));
+    public static final Item CHOCOLATE_MILKSHAKE = new ChocolateMilkshake(new Item.Settings().group(ItemGroup.FOOD));
 
     @Override
     public void onInitialize() {
@@ -70,6 +74,11 @@ public class Foodmodplus implements ModInitializer {
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, stoneSpiral.getValue(), VANILLA_FEATURE_CONFIGURED);
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.SAVANNA), GenerationStep.Feature.VEGETAL_DECORATION, stoneSpiral);
         Registry.register(Registry.ITEM, new Identifier("foodmodplus","glint_juice"), GLINT_JUICE);
+        Registry.register(Registry.BLOCK, new Identifier("foodmodplus","chocolate_icecream"), CHOCOLATE_ICECREAM);
+        Registry.register(Registry.ITEM, new Identifier("foodmodplus", "chocolate_icecream"), new BlockItem(CHOCOLATE_ICECREAM, new FabricItemSettings().group(ItemGroup.FOOD).food(ModFoodComponents.ICECREAM)));
+        Registry.register(Registry.BLOCK, new Identifier("foodmodplus","sweetberry_icecream"), SWEETBERRY_ICECREAM);
+        Registry.register(Registry.ITEM, new Identifier("foodmodplus", "sweetberry_icecream"), new BlockItem(SWEETBERRY_ICECREAM, new FabricItemSettings().group(ItemGroup.FOOD).food(ModFoodComponents.ICECREAM)));
+        Registry.register(Registry.ITEM, new Identifier("foodmodplus","chocolate_milkshake"), CHOCOLATE_MILKSHAKE);
     }
 
 }
