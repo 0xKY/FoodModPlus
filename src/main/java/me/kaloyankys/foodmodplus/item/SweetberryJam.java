@@ -16,39 +16,16 @@ import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.UseAction;
 import net.minecraft.world.World;
 
-public class SweetberryJam extends Item {
+public class SweetberryJam extends BaseJuiceItem {
     public SweetberryJam(Settings settings) {
         super(settings);
     }
 
-    public ItemStack finishUsing(ItemStack stack, World world, LivingEntity user) {
-        if (user instanceof ServerPlayerEntity) {
-            ServerPlayerEntity serverPlayerEntity = (ServerPlayerEntity)user;
-            Criteria.CONSUME_ITEM.trigger(serverPlayerEntity, stack);
-            serverPlayerEntity.incrementStat(Stats.USED.getOrCreateStat(this));
-        }
-
-        if (user instanceof PlayerEntity && !((PlayerEntity)user).abilities.creativeMode) {
-            stack.decrement(1);
-        }
-
+    @Override
+    protected void onConsume(ItemStack stack, World world, LivingEntity user) {
         if (!world.isClient) {
             user.setHealth(0.5f);
             user.applyStatusEffect(new StatusEffectInstance(Foodmodplus.BERRY_POWER, 200, 1, false, true));
         }
-
-        return stack.isEmpty() ? new ItemStack(Items.GLASS_BOTTLE) : stack;
-    }
-
-    public int getMaxUseTime(ItemStack stack) {
-        return 64;
-    }
-
-    public UseAction getUseAction(ItemStack stack) {
-        return UseAction.DRINK;
-    }
-
-    public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
-        return ItemUsage.consumeHeldItem(world, user, hand);
     }
 }
