@@ -11,4 +11,5 @@ public class ModFoodComponents {
     public static final FoodComponent PIZZA_ITEM = new FoodComponent.Builder().hunger(7).saturationModifier(6).build();
     public static final FoodComponent CHEESE = new FoodComponent.Builder().hunger(3).saturationModifier(4).build();
     public static final FoodComponent ICECREAM = new FoodComponent.Builder().hunger(11).saturationModifier(5).build();
+    public static final FoodComponent FRIES_TWO = new FoodComponent.Builder().hunger(6).saturationModifier(3).snack().build();
 }

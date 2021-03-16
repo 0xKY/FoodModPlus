@@ -16,5 +16,9 @@
   "item.foodmodplus.milkshake": "Милкшейк",
   "item.foodmodplus.chocolate_milkshake": "Шоколадов Милкшейк",
   "item.foodmodplus.sweetberry_jam": "Мармалад от Сладки Боровинки",
-  "effect.foodmodplus.berry_power": "Силата на Боровинките"
+  "effect.foodmodplus.berry_power": "Силата на Боровинките",
+  "item.foodmodplus.fries": "Пържени Картофи",
+  "item.foodmodplus.fries_one": "Пържени Картофи",
+  "item.foodmodplus.fries_two": "Пържени Картофи",
+  "item.foodmodplus.cheesy_fries": "Пържени Картофи с Кашкавал"
 }

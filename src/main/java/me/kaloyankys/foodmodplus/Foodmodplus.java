@@ -52,6 +52,10 @@ public class Foodmodplus implements ModInitializer {
     public static final Item SWEETBERRY_MILKSHAKE = new SweetberryMilkshake(new Item.Settings().group(ItemGroup.FOOD));
     public static final Item SWEETBERRY_JAM = new SweetberryJam(new Item.Settings().group(ItemGroup.FOOD));
     public static final Item MILKSHAKE = new Milkshake(new Item.Settings().group(ItemGroup.FOOD));
+    public static final Item FRIES = new Fries(new Item.Settings().group(ItemGroup.FOOD));
+    public static final Item FRIES_ONE = new FriesOne(new Item.Settings());
+    public static final Item FRIES_TWO = new Item(new Item.Settings().food(ModFoodComponents.FRIES_TWO));
+    public static final Item CHEESY_FRIES = new CheesyFries(new Item.Settings().group(ItemGroup.FOOD));
 
     @Override
     public void onInitialize() {
@@ -85,5 +89,9 @@ public class Foodmodplus implements ModInitializer {
         Registry.register(Registry.ITEM, new Identifier("foodmodplus","sweetberry_milkshake"), SWEETBERRY_MILKSHAKE);
         Registry.register(Registry.ITEM, new Identifier("foodmodplus","sweetberry_jam"), SWEETBERRY_JAM);
         Registry.register(Registry.ITEM, new Identifier("foodmodplus","milkshake"), MILKSHAKE);
+        Registry.register(Registry.ITEM, new Identifier("foodmodplus","fries"), FRIES);
+        Registry.register(Registry.ITEM, new Identifier("foodmodplus","fries_one"), FRIES_ONE);
+        Registry.register(Registry.ITEM, new Identifier("foodmodplus","fries_two"), FRIES_TWO);
+        Registry.register(Registry.ITEM, new Identifier("foodmodplus","cheesy_fries"), CHEESY_FRIES);
     }
 }

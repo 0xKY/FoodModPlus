@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "P"
+  ],
+  "key": {
+    "#": {
+      "item": "foodmodplus:cheese"
+    },
+    "P": {
+      "item": "minecraft:potato"
+    }
+  },
+  "result": {
+    "item": "foodmodplus:cheesy_fries",
+    "count": 1
+  }
+}

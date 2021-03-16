@@ -16,5 +16,9 @@
   "item.foodmodplus.milkshake": "Milkshake",
   "item.foodmodplus.chocolate_milkshake": "Milkshake au chocolat",
   "item.foodmodplus.sweetberry_jam": "Confiture de petits fruits sucrés",
-  "effect.foodmodplus.berry_power": "Puissance de petits fruits sucrés"
+  "effect.foodmodplus.berry_power": "Puissance de petits fruits sucrés",
+  "item.foodmodplus.fries": "Frites",
+  "item.foodmodplus.fries_one": "Frites",
+  "item.foodmodplus.fries_two": "Frites",
+  "item.foodmodplus.cheesy_fries": "Frites au fromage"
 }

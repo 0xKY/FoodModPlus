@@ -16,5 +16,9 @@
   "item.foodmodplus.milkshake": "Milkshake",
   "item.foodmodplus.chocolate_milkshake": "Chocolate Milkshake",
   "item.foodmodplus.sweetberry_jam": "Sweet Berry Jam",
-  "effect.foodmodplus.berry_power": "Berry Power!"
+  "effect.foodmodplus.berry_power": "Berry Power!",
+  "item.foodmodplus.fries": "Fries",
+  "item.foodmodplus.fries_one": "Fries",
+  "item.foodmodplus.fries_two": "Fries",
+  "item.foodmodplus.cheesy_fries": "Cheesy Fries"
 }
