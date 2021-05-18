@@ -1,7 +1,6 @@
 package me.kaloyankys.foodmodplus.item;
 
-import me.kaloyankys.foodmodplus.Foodmodplus;
-import net.minecraft.advancement.criterion.Criteria;
+/*import net.minecraft.advancement.criterion.Criteria;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
@@ -17,8 +16,11 @@ import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.UseAction;
 import net.minecraft.world.World;
 
-public class SweetberryMilkshake extends BaseJuiceItem {
-    public SweetberryMilkshake(Settings settings) {
+*/public class SweetberryMilkshake extends BaseJuiceItem {
+    public SweetberryMilkshake(Properties properties) {
+        super(properties);
+    }
+   /* public SweetberryMilkshake(Settings settings) {
         super(settings);
     }
 
@@ -29,5 +31,5 @@ public class SweetberryMilkshake extends BaseJuiceItem {
             user.applyStatusEffect(new StatusEffectInstance(Foodmodplus.BERRY_POWER, 800, 1, false, true));
         }
 
-    }
+    }*/
 }

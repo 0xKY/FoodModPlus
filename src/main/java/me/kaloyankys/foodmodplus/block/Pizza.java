@@ -1,8 +1,7 @@
 package me.kaloyankys.foodmodplus.block;
 
-import me.kaloyankys.foodmodplus.Foodmodplus;
 import net.minecraft.block.*;
-import net.minecraft.entity.ItemEntity;
+/*import net.minecraft.entity.ItemEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
@@ -19,10 +18,13 @@ import net.minecraft.world.World;
 
 import java.util.function.Consumer;
 
-public class Pizza extends GourdBlock {
+*/public class Pizza extends CakeBlock {
+    public Pizza(Properties properties) {
+        super(properties);
+    }
 
 
-    public Pizza(Settings settings) {
+  /*  public Pizza(Settings settings) {
         super(settings);
     }
 
@@ -55,5 +57,5 @@ public class Pizza extends GourdBlock {
     @Override
     public AttachedStemBlock getAttachedStem() {
         return null;
-    }
+    }*/
 }

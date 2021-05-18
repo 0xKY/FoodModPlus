@@ -1,7 +1,8 @@
 package me.kaloyankys.foodmodplus.item;
 
-import me.kaloyankys.foodmodplus.Foodmodplus;
-import net.minecraft.advancement.criterion.Criteria;
+import net.minecraft.item.Item;
+
+/*import net.minecraft.advancement.criterion.Criteria;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
@@ -17,8 +18,11 @@ import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.UseAction;
 import net.minecraft.world.World;
 
-public class Fries extends Item{
-    public Fries(Item.Settings settings) {
+*/public class Fries extends Item {
+    public Fries(Properties properties) {
+        super(properties);
+    }
+   /* public Fries(Item.Settings settings) {
         super(settings);
     }
     public ItemStack finishUsing(ItemStack stack, World world, LivingEntity user) {
@@ -55,6 +59,6 @@ public class Fries extends Item{
 
     protected void onConsume(ItemStack stack, World world, LivingEntity user) {
 
-    }
+    }*/
 
 }

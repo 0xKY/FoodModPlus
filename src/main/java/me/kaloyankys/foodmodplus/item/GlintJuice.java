@@ -1,7 +1,6 @@
 package me.kaloyankys.foodmodplus.item;
 
-import me.kaloyankys.foodmodplus.Foodmodplus;
-import net.minecraft.advancement.criterion.Criteria;
+/*import net.minecraft.advancement.criterion.Criteria;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
@@ -17,8 +16,11 @@ import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.UseAction;
 import net.minecraft.world.World;
 
-public class GlintJuice extends BaseJuiceItem {
-    public GlintJuice(Settings settings) {
+*/public class GlintJuice extends BaseJuiceItem {
+    public GlintJuice(Properties properties) {
+        super(properties);
+    }
+   /* public GlintJuice(Settings settings) {
         super(settings);
     }
 
@@ -27,6 +29,6 @@ public class GlintJuice extends BaseJuiceItem {
         if (!world.isClient) {
             user.applyStatusEffect(new StatusEffectInstance(StatusEffects.GLOWING, 2400, 1, false, true));
         }
-    }
+    }*/
 }
 

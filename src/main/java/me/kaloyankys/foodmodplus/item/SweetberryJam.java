@@ -1,7 +1,6 @@
 package me.kaloyankys.foodmodplus.item;
 
-import me.kaloyankys.foodmodplus.Foodmodplus;
-import net.minecraft.advancement.criterion.Criteria;
+/*import net.minecraft.advancement.criterion.Criteria;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.player.PlayerEntity;
@@ -16,8 +15,11 @@ import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.UseAction;
 import net.minecraft.world.World;
 
-public class SweetberryJam extends BaseJuiceItem {
-    public SweetberryJam(Settings settings) {
+*/public class SweetberryJam extends BaseJuiceItem {
+    public SweetberryJam(Properties properties) {
+        super(properties);
+    }
+  /*  public SweetberryJam(Settings settings) {
         super(settings);
     }
 
@@ -27,5 +29,5 @@ public class SweetberryJam extends BaseJuiceItem {
             user.setHealth(0.5f);
             user.applyStatusEffect(new StatusEffectInstance(Foodmodplus.BERRY_POWER, 200, 1, false, true));
         }
-    }
+    }*/
 }

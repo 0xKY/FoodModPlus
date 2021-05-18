@@ -1,21 +1,27 @@
 package me.kaloyankys.foodmodplus.statuseffects;
 
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.effect.StatusEffect;
+import net.minecraft.potion.Effect;
+import net.minecraft.potion.EffectType;
+
+/*import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffectType;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 
-public class BerryPowerEffect extends StatusEffect {
-    public BerryPowerEffect() {
+*/public class BerryPowerEffect extends Effect {
+    protected BerryPowerEffect(EffectType typeIn, int liquidColorIn) {
+        super(typeIn, liquidColorIn);
+    }
+  /*  public BerryPowerEffect() {
         super(
                 StatusEffectType.BENEFICIAL,
                 0xb33b32);
     }
 
 
-    @Override
+   @Override
     public boolean canApplyUpdateEffect(int duration, int amplifier) {
         return true;
     }
@@ -25,5 +31,5 @@ public class BerryPowerEffect extends StatusEffect {
         if (entity instanceof PlayerEntity) {
             ((PlayerEntity) entity).applyStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 20*20, 4, true, false));
         }
-    }
+    }*/
 }

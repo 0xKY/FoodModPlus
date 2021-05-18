@@ -1,7 +1,6 @@
 package me.kaloyankys.foodmodplus.item;
 
-import me.kaloyankys.foodmodplus.Foodmodplus;
-import net.minecraft.advancement.criterion.Criteria;
+/*import net.minecraft.advancement.criterion.Criteria;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.player.PlayerEntity;
@@ -16,8 +15,11 @@ import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.UseAction;
 import net.minecraft.world.World;
 
-public class ChocolateMilkshake extends BaseJuiceItem {
-    public ChocolateMilkshake(Settings settings) {
+*/public class ChocolateMilkshake extends BaseJuiceItem {
+    public ChocolateMilkshake(Properties properties) {
+        super(properties);
+    }
+   /* public ChocolateMilkshake(Settings settings) {
         super(settings);
     }
 
@@ -27,5 +29,5 @@ public class ChocolateMilkshake extends BaseJuiceItem {
             user.heal(10);
 
         }
-    }
+    }*/
 }

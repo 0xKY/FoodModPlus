@@ -1,6 +1,8 @@
 package me.kaloyankys.foodmodplus.item;
 
-import net.minecraft.advancement.criterion.Criteria;
+import net.minecraft.item.Item;
+
+/*import net.minecraft.advancement.criterion.Criteria;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
@@ -14,9 +16,12 @@ import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.UseAction;
 import net.minecraft.world.World;
 
-public abstract class BaseJuiceItem extends Item {
+*/public abstract class BaseJuiceItem extends Item {
+    public BaseJuiceItem(Properties properties) {
+        super(properties);
+    }
 // Thanks JoeMama
-    public BaseJuiceItem(Settings settings) {
+   /* public BaseJuiceItem(Settings settings) {
         super(settings);
     }
 
@@ -52,6 +57,6 @@ public abstract class BaseJuiceItem extends Item {
         return ItemUsage.consumeHeldItem(world, user, hand);
     }
 
-    protected abstract void onConsume(ItemStack stack, World world, LivingEntity user);
+    protected abstract void onConsume(ItemStack stack, World world, LivingEntity user);*/
 
 }

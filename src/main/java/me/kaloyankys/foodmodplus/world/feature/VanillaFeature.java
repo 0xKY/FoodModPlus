@@ -1,9 +1,15 @@
 package me.kaloyankys.foodmodplus.world.feature;
 
 import com.mojang.serialization.Codec;
-import me.kaloyankys.foodmodplus.Foodmodplus;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.Direction;
+import net.minecraft.world.ISeedReader;
+import net.minecraft.world.gen.ChunkGenerator;
+import net.minecraft.world.gen.feature.Feature;
+import net.minecraft.world.gen.feature.IFeatureConfig;
+
+import java.util.Random;
+
+/*import net.minecraft.util.math.Direction;
 import net.minecraft.world.Heightmap;
 import net.minecraft.world.StructureWorldAccess;
 import net.minecraft.world.gen.chunk.ChunkGenerator;
@@ -12,8 +18,16 @@ import net.minecraft.world.gen.feature.FeatureConfig;
 
 import java.util.Random;
 
-public class VanillaFeature extends Feature {
-    public VanillaFeature(Codec configCodec) {
+*/public class VanillaFeature extends Feature {
+    public VanillaFeature(Codec codec) {
+        super(codec);
+    }
+
+    @Override
+    public boolean generate(ISeedReader reader, ChunkGenerator generator, Random rand, BlockPos pos, IFeatureConfig config) {
+        return false;
+    }
+  /*  public VanillaFeature(Codec configCodec) {
         super(configCodec);
     }
     @Override
@@ -27,5 +41,5 @@ public class VanillaFeature extends Feature {
         }
 
         return true;
-    }
+    }*/
 }

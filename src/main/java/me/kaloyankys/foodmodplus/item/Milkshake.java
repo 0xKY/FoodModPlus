@@ -1,7 +1,6 @@
 package me.kaloyankys.foodmodplus.item;
 
-import me.kaloyankys.foodmodplus.Foodmodplus;
-import net.minecraft.advancement.criterion.Criteria;
+/*import net.minecraft.advancement.criterion.Criteria;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
@@ -17,8 +16,11 @@ import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.UseAction;
 import net.minecraft.world.World;
 
-public class Milkshake extends BaseJuiceItem {
-    public Milkshake(Settings settings) {
+*/public class Milkshake extends BaseJuiceItem {
+    public Milkshake(Properties properties) {
+        super(properties);
+    }
+   /* public Milkshake(Settings settings) {
         super(settings);
     }
 
@@ -27,5 +29,5 @@ public class Milkshake extends BaseJuiceItem {
         if (!world.isClient) {
             user.applyStatusEffect(new StatusEffectInstance(StatusEffects.SATURATION, 20, 2));
         }
-    }
+    }*/
 }

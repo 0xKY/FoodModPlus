@@ -1,7 +1,10 @@
 package me.kaloyankys.foodmodplus.statuseffects;
 
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.damage.DamageSource;
+import net.minecraft.potion.Effect;
+import net.minecraft.potion.EffectType;
+
+/*import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffectType;
@@ -9,8 +12,11 @@ import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.projectile.thrown.PotionEntity;
 
-public class MapledUpEffect extends StatusEffect {
-    public MapledUpEffect() {
+*/public class MapledUpEffect extends Effect {
+    protected MapledUpEffect(EffectType typeIn, int liquidColorIn) {
+        super(typeIn, liquidColorIn);
+    }
+ /*   public MapledUpEffect() {
         super(
                 StatusEffectType.BENEFICIAL,
                 0x8D572D);
@@ -31,7 +37,7 @@ public class MapledUpEffect extends StatusEffect {
             ((PlayerEntity) entity).applyStatusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS, 20*20, 120, true, false));
         }
     }
-
+*/
 
 
 
