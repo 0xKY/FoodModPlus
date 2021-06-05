@@ -4,10 +4,9 @@ import me.kaloyankys.foodmodplus.block.BlockBase;
 import me.kaloyankys.foodmodplus.block.IceCream;
 import me.kaloyankys.foodmodplus.block.PancakeStackBlock;
 import me.kaloyankys.foodmodplus.item.Burger;
+import me.kaloyankys.foodmodplus.item.Pancake;
 import net.minecraft.block.Block;
-import net.minecraft.entity.EntityType;
 import net.minecraft.item.*;
-import net.minecraft.util.registry.Registry;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
@@ -26,21 +25,22 @@ public class RegistryHandler {
     }
     //Items
     public static final RegistryObject<Item> BURGER = ITEMS.register("burger", Burger::new);
+    public static final RegistryObject<Item> PANCAKE = ITEMS.register("pancake", Pancake::new);
 
     //Blocks
     public static final RegistryObject<Block> ICECREAM = BLOCKS.register("icecream_block", IceCream::new);
     public static final RegistryObject<Block> CHOCOLATE_ICECREAM = BLOCKS.register("chocolate_icecream", IceCream::new);
     public static final RegistryObject<Block> SWEETBERRY_ICECREAM = BLOCKS.register("sweetberry_icecream", IceCream::new);
-
+    public static final RegistryObject<Block> PANCAKE_STACK = BLOCKS.register("pancake_stack", PancakeStackBlock::new);
 
 
     //Block Items
     public static final RegistryObject<Item> ICECREAM_ITEM = ITEMS.register("icecream_block", () -> new BlockBase(ICECREAM.get()));
    public static final RegistryObject<Item> CHOCOLATE_ICECREAM_ITEM = ITEMS.register("chocolate_icecream", () -> new BlockBase(CHOCOLATE_ICECREAM.get()));
     public static final RegistryObject<Item> SWEETBERRY_ICECREAM_ITEM = ITEMS.register("sweetberry_icecream", () -> new BlockBase(SWEETBERRY_ICECREAM.get()));
+    public static final RegistryObject<Item> PANCAKE_STACK_ITEM = ITEMS.register("pancake_stack", () -> new BlockBase(PANCAKE_STACK.get()));
 
-    /*public static final Item PANCAKE = new Item(new Item.Settings().group(ItemGroup.FOOD).food(ModFoodComponents.PANCAKE).maxCount(6));
-    public static final Block PANCAKE_STACK = new PancakeStackBlock(FabricBlockSettings.of(Material.CAKE).strength(0.2f));
+    /*
     public static final StatusEffect MAPLED_UP = new MapledUpEffect();
     public static final Item SYRUP = new Syrup(new Item.Settings().group(ItemGroup.FOOD).maxCount(1));
     public static final Item PIZZA_ITEM = new PizzaItem(new Item.Settings().group(ItemGroup.FOOD).food(ModFoodComponents.PIZZA_ITEM));
@@ -63,7 +63,6 @@ public class RegistryHandler {
     @Override
     public void onInitialize() {
 
-        Registry.register(Registry.ITEM, new Identifier("foodmodplus", "burger"),  BURGER);
         Registry.register(Registry.ITEM, new Identifier("foodmodplus", "pancake"), PANCAKE);
         Registry.register(Registry.BLOCK, new Identifier("foodmodplus", "pancake_stack"), PANCAKE_STACK);
         Registry.register(Registry.ITEM, new Identifier("foodmodplus", "pancake_stack"), new BlockItem(PANCAKE_STACK, new FabricItemSettings().group(ItemGroup.FOOD).maxCount(1)));
